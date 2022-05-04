@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="meditation.png" />
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Meditation</title>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -18,33 +27,63 @@
     <div id="navigation-container" class="navigation-container">
       <!-- Logo -->
       <a href="#home" id="icon" class="icon">Meditation</a>
+
       <!-- Navigation -->
-      <nav>
-        <a class="links" href="html/about.html" src>About us</a>
-        <a class="links" href="html/meditationTypes.html">Meditation types</a>
-        <a id="try-for-free" class="links" href="#trymeditation">Try for free</a>
+      <nav class="menu">
+        <a class="links" href="About Page/about.html" src>About us</a>
+        <a class="links" href="Meditation Types/meditationTypes.html"
+          >Meditation types</a
+        >
+        <a id="try-for-free" class="links" href="#trymeditation"
+          >Try for free</a
+        >
       </nav>
+      <a class="hamburger-menu">
+        <!-- <i class="material-icons">&#xe5cd;</i> -->
+        <i class="fa fa-bars fa-3x"></i>
+        <i class="fa-solid fa-xmark fa-3x"></i>
+      </a>
     </div>
 
     <!-- Home Section -->
-    <section id="home">
+    <section class="home">
       <span class="text">Find Your Peace</span>
       <h3 class="text">
         Our goal is to help you improve your health and happiness
       </h3>
       <h3 class="text">What can we help with today?</h3>
 
-      <button class="button">
-        <i class="fa fa-moon"></i>
-        Improve sleep quality
-      </button>
-      <button class="button">
-        <i class="fa fa-spa"></i> Reduce stress or anxiety
-      </button>
-      <button class="button"><i class="fa fa-brain"></i> Improve focus</button>
-      <button class="button">
-        <i class="fa fa-leaf"></i> Self-improvement
-      </button>
+      <div class="buttons-container">
+        <button
+          onclick="location.href=`Play Audio/playAudio.html`"
+          id="button1"
+          class="button"
+        >
+          <i class="fa fa-moon"></i>
+          Improve sleep quality
+        </button>
+        <button
+          onclick="location.href=`Play Audio/playAudio.html`"
+          id="button2"
+          class="button"
+        >
+          <i class="fa fa-spa"></i> Reduce stress or anxiety
+        </button>
+        <button
+          onclick="location.href=`Play Audio/playAudio.html`"
+          id="button3"
+          class="button"
+        >
+          <i class="fa fa-brain"></i> Improve focus
+        </button>
+        <button
+          onclick="location.href=`Play Audio/playAudio.html`"
+          id="button4"
+          class="button"
+        >
+          <i class="fa fa-leaf"></i> Self-improvement
+        </button>
+      </div>
     </section>
 
     <!-- Footer -->

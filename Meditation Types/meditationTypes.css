@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@500&family=Kaushan+Script&family=Lato:ital,wght@1,300&family=League+Spartan:wght@400;700&family=Nunito&family=Oswald&display=swap");
+
+html {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+  color: #fcfcfc;
+}
+
+.types-of-meditation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meditation-type {
+  width: 240px;
+  height: 390px;
+  border-radius: 20px;
+  margin: 1rem;
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+}
+
+.overview-overlay {
+  position: absolute;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.434);
+
+  border-radius: 0px 0px 20px 20px;
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.7s ease;
+  opacity: 0;
+  color: white;
+  text-align: center;
+}
+
+.meditation-type:hover .overview-overlay {
+  opacity: 1;
+}
+
+.mindfulnes {
+  background-image: url("https://images.unsplash.com/photo-1576005391034-242dd8f40823?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1lZGl0YXRpb258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+.spiritual {
+  background-image: url("https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaXRhdGlvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+.focused {
+  background-image: url("https://images.unsplash.com/photo-1531986733711-de47444e8cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaXRhdGlvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+  font-size: 17px;
+}
+
+.movement {
+  background-image: url("https://images.unsplash.com/photo-1554067559-269708c83fb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=494&q=80");
+  background-size: 100% 100%;
+}
+
+.mantra {
+  background-image: url("https://images.unsplash.com/photo-1576005391034-242dd8f40823?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1lZGl0YXRpb258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+.transcendental {
+  background-image: url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG1lZGl0YXRpb258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+.progressive-relaxation {
+  background-image: url("https://images.unsplash.com/photo-1601763011535-37a74c49c696?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG1lZGl0YXRpb258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+.loving-kindness {
+  background-image: url("https://images.unsplash.com/photo-1633773576173-4f0fa03ad0de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+  background-size: 100% 100%;
+}
+
+.visualisation {
+  background-image: url("https://images.unsplash.com/photo-1597020976624-a247ce8150c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fG1lZGl0YXRpb258ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-size: 100% 100%;
+}
+
+button {
+  height: 80px;
+  width: 150px;
+  background: transparent;
+  border: none;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+
+.tooltip {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}

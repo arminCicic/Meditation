@@ -1,20 +1,43 @@
 const body = document.body;
 const nav = document.querySelector("#navigation-container");
-const icon = document.querySelector("#icon");
+const icon = document.querySelector(".icon");
 const links = document.querySelectorAll(".links");
-const backButton = document.querySelector("#back-button");
-const tooltip = document.querySelector(".tooltip");
-const tryForFree = document.querySelector("#try-for-free")
+const tryForFree = document.querySelector("#try-for-free");
+const menu = document.querySelector(".menu");
+const hamburgerMenuIcon = document.querySelector(".hamburger-menu");
+// const button = document.querySelector("#button");
 
-
-
+hamburgerMenuIcon.addEventListener("click", () => {
+  menu.classList.remove("menu");
+  menu.classList.add("menu-responsive");
+});
 
 // Event listeners
 
-tryForFree.addEventListener("click", ()=> {
-  document.documentElement.scrollTop = 232; 
-})
+//Redirect page on clik and using local storage to send id of audio to playAudio.js
+button1.addEventListener("click", () => {
+  window.location.href = "Play Audio/playAudio.html";
+  localStorage.setItem("audioId", 0);
+});
 
+button2.addEventListener("click", () => {
+  window.location.href = "Play Audio/playAudio.html";
+  localStorage.setItem("audioId", 1);
+});
+
+button3.addEventListener("click", () => {
+  window.location.href = "Play Audio/playAudio.html";
+  localStorage.setItem("audioId", 2);
+});
+
+button4.addEventListener("click", () => {
+  window.location.href = "Play Audio/playAudio.html";
+  localStorage.setItem("audioId", 3);
+});
+
+tryForFree.addEventListener("click", () => {
+  document.documentElement.scrollTop = 232;
+});
 
 window.addEventListener("scroll", () => {
   if (
@@ -30,13 +53,3 @@ window.addEventListener("scroll", () => {
     links.forEach((link) => link.classList.remove("on-scroll-nav-text"));
   }
 });
-
-
-backButton.addEventListener("mouseenter", ()=>{ 
-  tooltip.style.visibility="visible"   
-})
-backButton.addEventListener("mouseleave", ()=>{ 
-  tooltip.style.visibility="hidden"  
-})
-
-
