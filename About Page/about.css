@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@500&family=Kaushan+Script&family=Lato:wght@300&family=League+Spartan:wght@400;700&family=Nunito&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
 
 html {
   box-sizing: border-box;
@@ -15,15 +16,39 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: brightness(60%);
-  font-family: Dancing Script, sans-serif;
+  font-family: Libre Baskerville, sans-serif;
   overflow: hidden;
+  color: #fcfcfc;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+}
+
+.icon {
+  font-size: 55px;
+  font-family: Dancing Script, sans-serif;
+  color: rgb(128, 75, 145);
+}
+
+.did-you-know {
+  margin: auto;
+  width: 400px;
+  background-color: #fcfcfc;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.8;
 }
 
 .about-us-text {
   text-align: center;
-  padding: 100px;
+  padding: 80px;
   color: #fcfcfc;
-  font-style: italic;
   letter-spacing: 2px;
   font-size: 26px;
 }
