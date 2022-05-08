@@ -26,6 +26,7 @@ body {
 .meditation-type {
   width: 240px;
   height: 390px;
+  padding: 10px;
   border-radius: 20px;
   margin: 1rem;
   position: relative;
@@ -37,6 +38,7 @@ body {
 
 .overview-overlay {
   position: absolute;
+  left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.434);
   border-radius: 0px 0px 20px 20px;
