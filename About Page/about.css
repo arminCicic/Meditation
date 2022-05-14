@@ -73,3 +73,13 @@ button {
     padding: 50px;
   }
 }
+
+@media only screen and (max-width: 412px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .did-you-know {
+    width: 270px;
+  }
+}
