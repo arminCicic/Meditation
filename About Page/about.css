@@ -75,6 +75,12 @@ button {
 }
 
 @media only screen and (max-width: 412px) {
+
+.about-us-text{
+  font-size: 18px;
+  padding: 25px;
+}
+
   .title {
     font-size: 30px;
   }
