@@ -52,8 +52,7 @@ function playSong() {
   playBtn.classList.replace("fa-play", "fa-pause");
   playBtn.setAttribute("title", "Pause");
   music.play();
-  console.log(currentSongId);
-}
+  }
 
 // Pause
 function pauseSong() {
@@ -63,27 +62,31 @@ function pauseSong() {
   music.pause();
 }
 
-// Add Previous and Next song functionality when  more songs are uploaded for specific topic.
 
-// // Previous Song
-// function prevSong() {
-//   songIndex--;
-//   if (songIndex < 0) {
-//     songIndex = songs.length - 1;
-//   }
-//   loadSong(songs[songIndex]);
-//   playSong();
-// }
 
-// // Next Song
-// function nextSong() {
-//   songIndex++;
-//   if (songIndex > songs.length - 1) {
-//     songIndex = 0;
-//   }
-//   loadSong(songs[songIndex]);
-//   playSong();
-// }
+// Previous Song
+function prevSong() {
+  songIndex--;
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
+let songIndex = currentSongId;
+
+// Next Song
+function nextSong() { 
+  songIndex++;
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
+
 loadSong(songs[currentSongId]);
 
 // Update Progress Bar & Time
@@ -125,8 +128,8 @@ function setProgressBar(e) {
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
 
 // Event Listeners
-// prevBtn.addEventListener('click', prevSong);
-// nextBtn.addEventListener('click', nextSong);
-// music.addEventListener("ended", nextSong);
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+music.addEventListener("ended", nextSong);
 music.addEventListener("timeupdate", updateProgressBar);
 progressContainer.addEventListener("click", setProgressBar);
